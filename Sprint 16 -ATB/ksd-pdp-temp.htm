@@ -396,7 +396,196 @@ border-bottom: 1px dashed #BBBBBB !important;
     <link rel="stylesheet" type="text/css" href="ksd-pdp-temp_files/m-closeButton.css">
     <link rel="stylesheet" type="text/css" href="ksd-pdp-temp_files/m-popupWindow.css">
     <link rel="stylesheet" type="text/css" href="ksd-pdp-temp_files/m-addtoBagConfirmation.css">
+    <!--link rel="stylesheet" type="text/css" href="ksd-pdp-temp_files/bootstrap.min.css"--> 
+<style>
+.carousel {
+  position: relative;
+}
 
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: 0.6s ease-in-out left;
+          transition: 0.6s ease-in-out left;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  line-height: 1;
+}
+
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+
+.carousel-inner > .active {
+  left: 0;
+}
+
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel-inner > .next {
+  left: 100%;
+}
+
+.carousel-inner > .prev {
+  left: -100%;
+}
+
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+
+.carousel-inner > .active.left {
+  left: -100%;
+}
+
+.carousel-inner > .active.right {
+  left: 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  /*text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);*/
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/*.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}*/
+
+.carousel-control.right {
+  right: 0;
+  left: auto;
+/*  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);*/
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #ffffff;
+  text-decoration: none;
+  outline: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  left: 50%;
+}
+
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  right: 50%;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  font-family: serif;
+}
+
+.carousel-control .icon-prev:before {
+  content: '\2039';
+}
+
+.carousel-control .icon-next:before {
+  content: '\203a';
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.carousel-caption {
+  /*position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #000;  fff */
+  /*text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);*/
+}
+
+.carousel-caption .btn {
+  text-shadow: none;
+}
+</style>    
     <!--[if lte IE 9]> <div class="m-addToBagConfirmation m-popupWindow p-clearfix lteIE9"> <![endif]-->
     <!--[if !lte IE 9]><!-->
     <div style="top: 590.5px; left: 571.5px; display: block;" class="m-addToBagConfirmation m-popupWindow p-clearfix">
@@ -473,9 +662,118 @@ border-bottom: 1px dashed #BBBBBB !important;
             </li>
         </ul>
 
-    </div><div class="m-addToBagConfirmation-productTemplate is-populated">
+    </div>
 
-    <img src="ksd-pdp-temp_files/1160_26484_mc_1534.jpg" class="e-productImage">
+    <div class="m-addToBagConfirmation-productTemplate is-populated">
+
+
+<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+  <div class="carousel-inner">
+    <div class="item active"><!-- class of active since it's the first item -->
+      <img src="ksd-pdp-temp_files/1160_26484_mc_1534.jpg" class="e-productImage" alt="" />
+      <div class="carousel-caption e-productData">
+            <ul class="e-productData">
+                <li>
+                    <h5 class="e-productName">Lightweight Crewneck Cotton Tee Shirt with Pocket</h5>
+                </li>
+                <li class="m-pricingStory">
+                    <p class="e-price">$17.99</p>
+                </li>
+                <li>
+                    <span class="e-productInfoLabel">Color:</span> <span class="e-productColor">Hunter</span>
+                </li>
+                <li>
+                    <span class="e-productInfoLabel">Size:</span> <span class="e-productSize">XL (Big)</span>
+                </li>
+                <li>
+                    <span class="e-productInfoLabel">Quantity:</span> <span class="e-productQuantity">1</span>
+                </li>
+                <!-- @todo: remove hard coded shipping messages, extra classes -->
+                <li class="e-shippingStatus">
+                    <p class="e-shippingStatusLabel">In Stock</p>
+                </li>
+                <li class="e-shippingStatus--backOrder">
+                    <p class="e-shippingStatusLabel">Reserved</p>
+                    <p class="e-shippingStatusMessage">Expected to ship by <span class="e-shippingStatusDate"></span>.</p>
+                </li>
+            </ul>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://media.plussizetech.com/ksd/mc/1160_54375_mc_0707.jpg?wid=88&hei=127&qlt=95&op_sharpen=1" class="e-productImage" alt="" />
+      <div class="carousel-caption e-productData">
+            <ul class="e-productData e-productData">
+                <li>
+                    <h5 class="e-productName">Lightweight Crewneck Cotton Tee Shirt with Pocket</h5>
+                </li>
+                <li class="m-pricingStory">
+                    <p class="e-price">$17.99</p>
+                </li>
+                <li>
+                    <span class="e-productInfoLabel">Color:</span> <span class="e-productColor">Hunter</span>
+                </li>
+                <li>
+                    <span class="e-productInfoLabel">Size:</span> <span class="e-productSize">XL (Big)</span>
+                </li>
+                <li>
+                    <span class="e-productInfoLabel">Quantity:</span> <span class="e-productQuantity">1</span>
+                </li>
+                <!-- @todo: remove hard coded shipping messages, extra classes -->
+                <li class="e-shippingStatus">
+                    <p class="e-shippingStatusLabel">In Stock</p>
+                </li>
+                <li class="e-shippingStatus--backOrder">
+                    <p class="e-shippingStatusLabel">Reserved</p>
+                    <p class="e-shippingStatusMessage">Expected to ship by <span class="e-shippingStatusDate"></span>.</p>
+                </li>
+            </ul>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://media.plussizetech.com/ksd/mc/1160_00478_mc_2796.jpg?wid=88&hei=127&qlt=95&op_sharpen=1" class="e-productImage" alt="" />
+      <div class="carousel-caption e-productData">
+            <ul class="e-productData">
+                <li>
+                    <h5 class="e-productName">Lightweight Crewneck Cotton Tee Shirt with Pocket</h5>
+                </li>
+                <li class="m-pricingStory">
+                    <p class="e-price">$17.99</p>
+                </li>
+                <li>
+                    <span class="e-productInfoLabel">Color:</span> <span class="e-productColor">Hunter</span>
+                </li>
+                <li>
+                    <span class="e-productInfoLabel">Size:</span> <span class="e-productSize">XL (Big)</span>
+                </li>
+                <li>
+                    <span class="e-productInfoLabel">Quantity:</span> <span class="e-productQuantity">1</span>
+                </li>
+                <!-- @todo: remove hard coded shipping messages, extra classes -->
+                <li class="e-shippingStatus">
+                    <p class="e-shippingStatusLabel">In Stock</p>
+                </li>
+                <li class="e-shippingStatus--backOrder">
+                    <p class="e-shippingStatusLabel">Reserved</p>
+                    <p class="e-shippingStatusMessage">Expected to ship by <span class="e-shippingStatusDate"></span>.</p>
+                </li>
+            </ul>
+      </div>
+    </div>
+  </div><!-- /.carousel-inner -->
+  <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+</div><!-- /.carousel -->
+
+<script src="ksd-pdp-temp_files/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+</script>
+
+    <!--img src="ksd-pdp-temp_files/1160_26484_mc_1534.jpg" class="e-productImage">
 
     <ul class="e-productData">
         <li>
@@ -493,7 +791,6 @@ border-bottom: 1px dashed #BBBBBB !important;
         <li>
             <span class="e-productInfoLabel">Quantity:</span> <span class="e-productQuantity">1</span>
         </li>
-        <!-- @todo: remove hard coded shipping messages, extra classes -->
         <li class="e-shippingStatus">
             <p class="e-shippingStatusLabel">In Stock</p>
         </li>
@@ -501,7 +798,7 @@ border-bottom: 1px dashed #BBBBBB !important;
             <p class="e-shippingStatusLabel">Reserved</p>
             <p class="e-shippingStatusMessage">Expected to ship by <span class="e-shippingStatusDate"></span>.</p>
         </li>
-    </ul>
+    </ul-->
 
     <ul>
         <li class="e-shippingStatus--braClub">
@@ -562,7 +859,7 @@ border-bottom: 1px dashed #BBBBBB !important;
 <!-- -------------------- -->
 <style>
 .recommendations {
-    overflow: hidden;
+    float: left;
     width: 100%;
     background-color: #fff
 }
@@ -595,7 +892,11 @@ a.prod-text {
     font: bold 1.3em/2.2em Arial,sans-serif;
     width: 98%;
     text-align: center;
-    margin: 15px auto 0;
+    margin: 0 auto;
+}
+.m-addToBagConfirmation .e-column-productInfo, .m-addToBagConfirmation .e-column-cartInfo {
+    padding: 20px 15px;
+    margin: 0;
 }
 </style>
 <div class="recommendations">    
