@@ -1,0 +1,29 @@
+
+/** Breadcrumbs ***************************************************************************/
+#breadcrumbs.CR-page table.ProductBC {float:left;width:980px; margin:0 0 10px 0; padding:0 0 4px 0; border-bottom:1px solid #ccc; }
+#breadcrumbs.CR-page table.ProductBC a { color:#555; text-decoration:none; }
+#breadcrumbs.CR-page table.ProductBC img { margin:0 5px; }
+/** [END] Breadcrumbs *********************************************************************/
+/** CR ************************************************************************************/
+.product-wrap .left-side .left-right .wrap-left-right .details #Reviews { width:200px; margin-top:10px;}
+.pr-snippet-wrapper {float:left;background:none !important;border:0 none !important;padding:0.25em; width:200px;}
+.pr-snippet-stars, .pr-snippet-read-write, .pr-snippet-read-reviews {border:0 none;display:inline; float:right; clear:none !important; margin-top:-4px; }
+.pr-snippet-stars .pr-snippet-rating-decimal, .pr-snippet-review-count {display:none;}
+.pr-snippet-read-write, .pr-snippet-read-reviews {padding:0 !important;text-align:center;width:100px;display:inline;float:left;}
+.pr-snippet-write-review {padding:0;text-align:center;width:100px;}
+.pr-snippet-read-reviews a:link,
+.pr-snippet-read-reviews a:visited {color:#ffa61c;}
+.pr-snippet-write-review a:link,
+.pr-snippet-write-review a:visited {color:#000;}
+#Reviews a:link,
+#Reviews a:visited {font-size:10px;}
+#noReviews {float:left;text-align:center;width:100px;display:none;}
+#noReviews .pr-stars.pr-stars-small {float:left;height:15px;line-height:15px;width:83px;}
+.pr-snippet-stars {margin-right:0 !important;padding:0 !important;display:inline; float:left;}
+.pr-snippet-stars .pr-stars-small {}
+.pr-snippet-read-write { margin-top:-4px !important; }
+/** IEs ***********************************************************************************/
+* html .pr-snippet-stars .pr-stars-small {margin-left:5px;}
+* html #noReviews a:link, * html #noReviews a:visited {position:relative;left:10px;float:left;}
+*+html #noReviews a:link, *+html #noReviews a:visited {display:block}
+/** [END] CR ******************************************************************************/

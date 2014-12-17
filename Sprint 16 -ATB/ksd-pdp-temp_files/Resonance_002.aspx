@@ -1,0 +1,1 @@
+certonaResponse({"resonance":{"schemes":[{"scheme":"product_rr","explanation":"","display":"yes","items":[{"id":"209261","producttypeid":"1","deptid":"23936"},{"id":"92236","producttypeid":"1","deptid":"23936"},{"id":"209260","producttypeid":"1","deptid":"23940"},{"id":"232161","producttypeid":"1","deptid":"23936"}]}]}});

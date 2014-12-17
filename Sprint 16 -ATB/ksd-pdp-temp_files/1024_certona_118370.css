@@ -1,0 +1,554 @@
+/*<CSS ID="1024_certona.css" Name="1024_certona.css" />*/
+
+/*	King Size Direct Certona  */
+/* 	All pages:			text align center / font-size 12px 
+	Home Page:			Layout: Horizontal / 5 across / Div width: 960px / Image width: 125 x 180					
+	Landing Page:		Layout: Horizontal / 4 across / Div width: 800px / Image width: 125 x 180					
+	NETP:				Layout: Horizontal / 5 across / Div width: 981px / Image width: 125 x 180	
+	PDP:				Layout: Vertical / Div width: 135px / Image width: 88 x 127
+	Shopping Page:		Layout: Vertical / Div width: 151px / Image width: 88 x 127
+*/
+
+/* ================================================= */
+/* Common Styles */
+.horizontal, .vertical {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    display: block;
+}
+
+.recommendations .product-image img {
+    border: none;
+}
+
+.recommendations span {
+    display: block;
+}
+
+.recommendations button {
+    background: url(http://secureimages.plussizetech.com/images/site_images/ksd/1024_ks_QuickView_button.png) center no-repeat;
+    cursor: pointer;
+    width: 80px;
+    height: 25px;
+    display: block;
+    margin: 0 auto;
+}
+
+.recommendations .original-price {
+    text-decoration: line-through;
+}
+
+
+/* ================================================= */
+/* Horizontal Styles */
+.horizontal h4 {
+    background-color: #002a54;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 9px 0 6px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.horizontal .recommendations .recommendation {
+    float: left;
+}
+
+.horizontal .recommendations .product-image img {
+    width: 125px;
+    height: 180px;
+    padding-left: 0px;
+}
+
+.horizontal .recommendations button {
+    margin: 3px auto 6px;
+}
+
+.horizontal .recommendations .product-name {
+    color: #333;
+    display: block;
+    text-decoration: underline;
+}
+
+.horizontal .recommendations .product-name:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.horizontal .recommendations .sale-price {
+    color: #c00;
+    display: block;
+}
+
+/* ================================================= */
+/* Vertical Styles */
+.vertical h4 {
+    font-size: 12px;
+    color: #434343;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.vertical .recommendations .recommendation {
+    text-align: center;
+    margin: 0 auto 22px;
+}
+
+.vertical .recommendations .product-image img {
+    width: 88px;
+    height: 127px;
+    border: none;
+}
+
+.vertical .recommendations button {
+    margin: 3px auto 3px;
+}
+
+.vertical .recommendations .product-name {
+    color: #333;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.vertical .recommendations .product-name:hover {
+    text-decoration: none;
+}
+
+.vertical .recommendations .sale-price {
+    color: #fb1f00;
+}
+/* ================================================= */
+/* Home Page */
+#home_rr {
+    width: 984px;
+    padding-bottom: 10px;
+    margin-left: -12px;
+    margin-top: 0;
+}
+
+#home_rr .recommendations {
+    margin-top: 4px;
+}
+
+#home_rr .recommendations .recommendation {
+    width: 192px;
+}
+
+#home_rr .recommendations .regular-price, #home_rr .recommendations .original-price {
+    color: #000;
+}
+
+/* ================================================= */
+/* Landing Page */
+#cat_rr {
+    width: 760px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+#cat_rr .recommendations {
+    margin-top: 4px;
+}
+
+#cat_rr .recommendations .recommendation {
+    width: 190px;
+}
+
+#cat_rr .recommendations .regular-price, #cat_rr .recommendations .original-price {
+    color: #000;
+}
+
+/* ================================================= */
+/* Net P */
+#netp_rr {
+    width: 981px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+#netp_rr .recommendations {
+    margin-top: 4px;
+}
+
+#netp_rr .recommendations .recommendation {
+    width: 125px;
+    padding: 0 32px 10px;
+}
+
+#netp_rr .recommendations .product-image img {
+    width: 125px;
+    height: 180px;
+}
+
+#netp_rr .recommendations .regular-price, #netp_rr .recommendations .original-price {
+    color: #262626;
+    text-decoration: none;
+}
+
+#netp_rr .recommendations .sale-price {
+    color: #f00;
+    font-weight: bold;
+}
+
+/* ================================================= */
+/* PDP */
+#product_rr {
+    width: 135px;
+    background-color: #f3f3f3;
+    border-left: 1px solid #d5d5d5;
+    border-right: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+    border-top: none;
+    margin-left: -10px;
+}
+
+* html #product_rr {
+    margin-left: 0;
+}
+
+#product_rr h4 {
+    display: none;
+}
+
+#product_rr .recommendations {
+    width: 135px;
+}
+
+#product_rr .recommendations .product-name {
+    color: #16487B;
+    text-decoration: underline;
+}
+
+#product_rr .recommendations .regular-price, #product_rr .recommendations .original-price {
+    color: #010101;
+}
+
+/* brand recommendations */
+div#product_rc {
+    width: 135px;
+    margin-left: -10px;
+    background-color: #f3f3f3;
+    border: 1px solid #d5d5d5;
+    border-bottom: 0;
+}
+
+div#product_rc h4 {
+    padding: 10px;
+    color: #434343;
+    font-size: 12px;
+    text-align: center;
+}
+
+div#product_rc div.teaser {
+    width: 135px;
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: center;
+    float: none;
+}
+
+div#product_rc div.teaser span.salepricestyle font {
+    display: block;
+    font-weight: normal;
+    color: #fb1f00;
+}
+
+/* ================================================= */
+/* Shopping Bag */
+#cart_rr {
+    width: 151px;
+    background-color: #fff;
+    margin-left: 2px;
+}
+
+* html #cart_rr {
+    padding: 0;
+    margin-left: 5px;
+}
+
+#cart_rr h4 {
+    color: #333;
+}
+
+#cart_rr .recommendations {
+    width: 151px;
+    margin-top: 8px;
+}
+
+#cart_rr .recommendations .product-name {
+    color: #333;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+#cart_rr .recommendations .regular-price, #product_rr .recommendations .original-price {
+    color: #333;
+}
+
+/* ================================================= */
+/* Error pages */
+#error_rr {
+    width: 981px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+#error_rr .recommendations {
+    margin-top: 4px;
+}
+
+#error_rr .recommendations .recommendation {
+    width: 125px;
+    padding: 0 32px 10px;
+}
+
+#error_rr .recommendations .product-image img {
+    width: 125px;
+    height: 180px;
+}
+
+#error_rr .recommendations .product-name {
+    color: #333;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+#error_rr .recommendations .regular-price, #error_rr .recommendations .original-price {
+    color: #262626;
+    text-decoration: none;
+}
+
+#error_rr .recommendations .sale-price {
+    color: #f00;
+    font-weight: bold;
+}
+
+/* ================================================= */
+
+
+
+
+
+
+
+
+/* no search results page - delete after August 2013 */
+#nosearch_rr table {
+    width: 100%;
+}
+
+#nosearch_rr table div {
+    display: inline-block;
+    margin-left: 0 !important;
+    width: 180px !important;
+}
+
+/* ================================================= */
+
+/* Static Landing Page */
+#landing_rr {
+    width: 960px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+#landing_rr .recommendations {
+    margin-top: 4px;
+}
+
+#landing_rr .recommendations .recommendation {
+    width: 192px;
+}
+
+#landing_rr .recommendations .regular-price, #landing_rr .recommendations .original-price {
+    color: #000;
+}
+
+#landing_rr table {
+    width: 980px;
+}
+
+#landing_rr table td span {
+    display: block;
+    padding-left: 0 !important;
+    text-align: center;
+}
+
+/* ================================================= */
+/* Clearance Page */
+#clearance_rr {
+    width: 764px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+#clearance_rr .recommendations {
+    margin-top: 4px;
+}
+
+#clearance_rr .recommendations .recommendation {
+    width: 192px;
+}
+
+#clearance_rr .recommendations .regular-price, #clearance_rr .recommendations .original-price {
+    color: #000;
+}
+
+#clearance_rr table {
+    width: 764px;
+}
+
+#clearance_rr table td span {
+    display: block;
+    padding-left: 0 !important;
+    text-align: center;
+}
+
+/* ================================================= */
+
+/* Empty Cart Page */
+#emptycart_rr {
+	width: 982px;
+	margin: 0 0 10px 0;
+}
+#emptycart_rr .recommendations {
+	margin-top: 4px;
+}
+#emptycart_rr .recommendations .recommendation {
+	width: 192px;  
+}
+#emptycart_rr .recommendations .regular-price, #clearance_rr .recommendations .original-price {
+	color: #000; 
+}/* Chameleon Override Content *//* Horizontal Styles */
+.horizontal h4 {
+    background-color: #002a54;
+    padding: 9px 0 6px;
+}
+
+.horizontal .recommendations .product-image img {
+    height: 180px;
+    width: 125px;
+    padding-left: 0px;
+}
+
+.vertical .recommendations .product-image img {
+	width: 88px;
+	height: 127px;
+    border: none;
+}
+
+/* Home Page */
+#home_rr {
+    width: 984px;
+    margin-left: -12px;
+    margin-top: 0;
+}
+
+/* no search results page - delete after August 2013 */
+#nosearch_rr table {
+    width: 100%;
+}
+
+#nosearch_rr table div {
+    display: inline-block;
+    margin-left: 0 !important;
+    width: 180px !important;
+}
+
+/* ================================================= */
+/* Static Landing Page */
+#landing_rr {
+    width: 960px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+#landing_rr .recommendations {
+    margin-top: 4px;
+}
+
+#landing_rr .recommendations .recommendation {
+    width: 192px;
+}
+
+#landing_rr .recommendations .regular-price, #landing_rr .recommendations .original-price {
+    color: #000;
+}
+
+#landing_rr table {
+    width: 980px;
+}
+
+#landing_rr table td span {
+    display: block;
+    padding-left: 0 !important;
+    text-align: center;
+}
+
+/* ================================================= */
+/* Clearance Page */
+#clearance_rr {
+    width: 764px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+#clearance_rr .recommendations {
+    margin-top: 4px;
+}
+
+#clearance_rr .recommendations .recommendation {
+    width: 192px;
+}
+
+#clearance_rr .recommendations .regular-price, #clearance_rr .recommendations .original-price {
+    color: #000;
+}
+
+#clearance_rr table {
+    width: 764px;
+}
+
+#clearance_rr table td span {
+    display: block;
+    padding-left: 0 !important;
+    text-align: center;
+}
+
+/* 
+  2013-08-19: Temporary styles - Remove after physical file is deployed in production 
+  Note that the #container selector or any other ID selector will not be present in the physical file.  This is only here to catch as many page types as possible.
+*/
+#container .horizontal .recommendations .original-price {
+    color: #000;
+    text-decoration: line-through;
+}
+
+#container .vertical .recommendations .original-price {
+    color: #000;
+    text-decoration: line-through;
+}
+
+/****** No Search Results page, which uses an old table format ******/
+.certona-product-1024 .StrikeStyle {
+    color: #000;
+    text-decoration: line-through;
+}
+
+.certona-product-1024 .boxredN {
+    color: #f00;
+    font-weight: bold;
+}
+
+.certona-product-1024 .price {
+    color: #000;
+}

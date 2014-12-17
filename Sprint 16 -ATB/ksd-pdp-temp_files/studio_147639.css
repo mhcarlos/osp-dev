@@ -1,0 +1,35 @@
+/*<CSS ID="studio.css" Name="studio.css" />*/
+/* Chameleon Override Content *//*<CSS ID="studio.css" Name="studio.css" />*/
+
+
+/* SEARCH.CSS START */
+
+
+	
+/* BOGO PROMO BANNER */
+
+div.promo-banner p.BOGO {
+		width:40px; height:40px; text-indent:-3000px; no-repeat; margin-left:1px;
+		background:url(http://images.plussizetech.com/images/site_images/KSD/bogo_promobanner_102414.png);
+	}
+
+/* WEB BUSTERS PROMO BANNER */
+
+div.promo-banner p.WebBuster {
+		width:43px; height:40px; text-indent:-3000px; no-repeat; margin-left:1px;
+		background:url(http://images.plussizetech.com/images/site_images/KSD/webbuster_121014.png);
+	}
+
+
+/* SEARCH.CSS END */
+
+
+/* Site_147922.CHMCSS START */
+ 
+a:link, a:visited, a:active {
+    border: 0 none;
+    color: #000000;
+    
+}
+ 
+/* Site_147922.CHMCSS END */

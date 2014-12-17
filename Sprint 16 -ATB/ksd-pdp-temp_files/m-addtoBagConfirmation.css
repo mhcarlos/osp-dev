@@ -1,0 +1,110 @@
+.m-addToBagConfirmation {
+	width: 760px;
+	padding: 0 0 3.5em;
+	overflow: hidden
+}
+.m-addToBagConfirmation .e-column-productInfo, .m-addToBagConfirmation .e-column-cartInfo {
+	float: left;
+	list-style-type: none;
+	margin-bottom: -9999px;
+	padding: 5%;
+	padding-bottom: 9999px
+}
+.m-addToBagConfirmation .e-column-productInfo {
+	width: 57%
+}
+.m-addToBagConfirmation .e-column-cartInfo {
+	border-left: 1px solid #dedede;
+	font-weight: bold;
+	width: 43%
+}
+.m-addToBagConfirmation .e-heading {
+	background: transparent url("//secureimages.plussizetech.com/images/site_images/roamans/check.png") no-repeat scroll left center;
+	color: #007500;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 1em;
+	padding-left: 2em
+}
+.m-addToBagConfirmation .e-productName {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0
+}
+.m-addToBagConfirmation .e-productImage {
+	margin-right: 8%;
+	vertical-align: top;
+	width: 28%
+}
+.m-addToBagConfirmation .e-productData {
+	display: inline-block;
+	list-style-type: none;
+	vertical-align: top;
+	width: 62%
+}
+.m-addToBagConfirmation .e-productColor {
+	text-transform: capitalize
+}
+.m-addToBagConfirmation .e-productInfoLabel, .m-addToBagConfirmation .e-shippingStatusLabel {
+	font-weight: bold
+}
+.m-addToBagConfirmation .e-productInfoLabel {
+	display: inline-block;
+	width: 30%
+}
+.m-addToBagConfirmation .e-shippingStatusLabel {
+	font-size: 1.3em
+}
+.m-addToBagConfirmation .e-shippingStatus, .m-addToBagConfirmation .e-shippingStatus--backOrder, .m-addToBagConfirmation .e-shippingStatus--dropShip, .m-addToBagConfirmation .e-shippingStatus--fullBeauty, .m-addToBagConfirmation .e-shippingStatus--braClub, .m-addToBagConfirmation .e-shippingStatus--bonusItem, .m-addToBagConfirmation .e-shippingStatus--intlShipping, .m-addToBagConfirmation .e-shippingStatus--heavyItem {
+	margin-top: 1em
+}
+.m-addToBagConfirmation .e-shippingStatus--backOrder, .m-addToBagConfirmation .e-shippingStatus--dropShip, .m-addToBagConfirmation .e-shippingStatus--fullBeauty, .m-addToBagConfirmation .e-shippingStatus--braClub, .m-addToBagConfirmation .e-shippingStatus--bonusItem, .m-addToBagConfirmation .e-shippingStatus--intlShipping, .m-addToBagConfirmation .e-shippingStatus--heavyItem {
+	display: none
+}
+.m-addToBagConfirmation .e-shippingStatusLabel {
+	color: #007500;
+	font-weight: bold
+}
+.m-addToBagConfirmation .e-shippingStatus--backOrder .e-shippingStatusLabel {
+	color: #f90
+}
+.m-addToBagConfirmation .e-shippingStatusDate {
+	font-weight: bold
+}
+.m-addToBagConfirmation .e-cartItems {
+	border-bottom: 1px solid #ccc;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	padding-bottom: 1em
+}
+.m-addToBagConfirmation .e-cartSubtotalLabel {
+	display: inline-block;
+	width: 62%
+}
+.m-addToBagConfirmation .e-cmsContent {
+	font-weight: normal;
+	margin-top: 1em
+}
+.m-addToBagConfirmation .p-cta, .m-addToBagConfirmation .p-cta--affirmative {
+	width: 100%
+}
+.m-addToBagConfirmation .m-pricingStory {
+	font-size: 1.1em;
+	margin-bottom: 1em
+}
+.m-addToBagConfirmation .m-pricingStory .e-price {
+	color: #c00
+}
+.m-addToBagConfirmation-productTemplate {
+	display: none
+}
+.m-addToBagConfirmation-productTemplate.is-populated {
+	display: block;
+	vertical-align: top
+}
+.m-addToBagConfirmation-productTemplate.is-multiItem {
+	border-top: 1px solid #ccc;
+	margin-top: 1em;
+	padding-top: 1em
+}
+

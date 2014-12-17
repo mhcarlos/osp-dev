@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html style="overflow:hidden"><head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+		<title>Form</title>
+		
+		<script src="85314_data/jquery.js" type="text/javascript"></script>
+
+		<script src="85314_data/overlay.js"></script>
+		<style>
+		a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,meter,nav,object,ol,output,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video,xmp{border:0;margin:0;padding:0}html,body{height:100%}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}b,strong{font-weight:700}img{color:transparent;font-size:0;vertical-align:middle;-ms-interpolation-mode:bicubic}li{display:list-item}table{border-collapse:collapse;border-spacing:0}th,td,caption{font-weight:400;vertical-align:top;text-align:left}q{quotes:none}q:before,q:after{content:none}sub,sup,small{font-size:75%}sub,sup{line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}svg{overflow:hidden}
+		</style>
+		<script>
+			var form_transition_effect = '';
+			var timers = [];
+			var errored =false;
+            var dont_wait = 0;
+						jQuery(window).load(function(){
+				if(errored){
+					XD.postMessage('failed');
+				}else{
+					XD.postMessage('loaded');
+				}
+				
+				XD.receiveMessage(function(message){
+					var m = message.split('&');
+					message = m[0];
+					if(message=='bcx_pop'){
+						if(m[1]){
+							var cookie = m[1].split('cookie=')[1];
+							jQuery('[name=cookie]').val(cookie);
+						}
+						/*var first = jQuery('form input[type=text]:first:visible');
+						if(first.length){
+							putCursor(first.get(0));
+						}  */
+						
+						if(timers && timers.length){
+							for(k in timers){
+								if(typeof(timers[k])=='function'){
+									timers[k]();
+								}
+							}
+						}
+						
+																			
+						try{ 
+							validate_coupons_seen($('#step_0'));
+						} catch(e){
+							
+						}
+						
+					}
+				});
+			});
+			jQuery(document).ready(function(){
+				jQuery('a').bind('click.bcx',function(e){
+					e = $(this);
+					var goes_somewhere = e.attr('onclick') || e.attr('href');
+					if(goes_somewhere){
+						if(e.attr('onclick')&& e.attr('onclick').indexOf('bcx_close_ad')>-1){
+							
+						}else{
+							XD.postMessage('report_click');
+							if(e.attr('target')=='_top' && e.attr('href').indexOf('/')>0){
+
+								setTimeout(function(){
+									window.top.location = e.attr('href');
+								},300);
+								return false;
+							}
+						}
+					}
+					if(e.hasClass('close_after_click')){
+						XD.postMessage('bcx_close_ad');
+						if(!goes_somewhere)
+							return false;
+					}
+				});
+							});
+		</script>
+		
+		<link rel="stylesheet" href="85314_data/bounce.css">
+	</head>
+	<body id="bcx_frame_body" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+		<input value="85314" name="campaign_id" id="bcx_campaign_id" type="hidden">
+		<input value="http://www.kingsizedirect.com/large-size/Lightweight-Crewneck-Cotton-Tee-Shirt-with-Pocket.aspx?PfId=209527&amp;DeptId=23942&amp;ProductTypeId=1&amp;ppos=1&amp;Splt=1&amp;StyleNo=1533" name="url" id="bcx_calling_url" type="hidden">
+		<input value="0" id="bouncex_close_timeout" type="hidden">
+	
+			<div class="bcx_f" id="bcx_form" style="width:;height:">
+								<style type="text/css">
+					#bcx_close_85314_top {
+	top: 28px!important;
+	right: 2px!important;
+}
+				</style>
+						 <div style="display:block;z-index:1;width:100%;height:100%;" id="step_0" class="wmode wbefore">    <div class="form_slide">       <form action="/capture/submit" id="form_548a0245a47f4" method="post" onsubmit="submit_genie_form(this,0,1);return false">    <input value="0" name="m" type="hidden">    <input value="d" name="d" type="hidden">    <input value="english" name="lang" type="hidden">    <input value="0" name="last_step" type="hidden">    <input value="%7B%22v%22%3A%7B%22foot_email_sub%22%3Afalse%2C%22cart_value%22%3A0%7D%2C%22fvt%22%3A1418328471%2C%22vid%22%3A1418330693564064%2C%22ao%22%3A0%2C%22as%22%3A0%2C%22vpv%22%3A1%2C%22d%22%3A%22d%22%2C%22lp%22%3A%22http%253A%252F%252Fwww.kingsizedirect.com%252Flarge-size%252FLightweight-Crewneck-Cotton-Tee-Shirt-with-Pocket.aspx%253FPfId%253D209527%2526DeptId%253D23942%2526ProductTypeId%253D1%2526ppos%253D1%2526Splt%253D1%2526StyleNo%253D1533%22%2C%22r%22%3A%22http%25253A%25252F%25252Fwww.kingsizedirect.com%25252FBig-and-Tall-T-Shirts.aspx%25253FDeptId%25253D23942%22%2C%22cvt%22%3A1418330693%2C%22gcr%22%3A8%2C%22m%22%3A0%2C%22campaigns%22%3A%7B%2285314%22%3A%7B%22ao%22%3A3%2C%22as%22%3A3%2C%22vv%22%3A1%2C%22av%22%3A0%2C%22lvt%22%3A1418330694%2C%22lavid%22%3A1418327941112526%2C%22la%22%3A1418328472%2C%22fsa%22%3A1418327942%7D%2C%2238755%22%3A%7B%22ao%22%3A0%2C%22as%22%3A0%2C%22vv%22%3A0%2C%22av%22%3A0%2C%22lvt%22%3A1418330693%7D%7D%2C%22lvt%22%3A1418330694%2C%22ibxt%22%3A%22MTQxODMyNzk0MTExMjUyNg%253D%253D%22%7D" name="cookie" type="hidden">    <input value="1" name="step" type="hidden">    <input value="before" name="step_name" type="hidden">    <input value="header_top" name="pos" type="hidden">    <input value="85314" name="campaign_id" type="hidden">    <input value="1418330693564064" name="visit_id" type="hidden">    <input value="" name="cv_id" type="hidden">    <input value="http://www.kingsizedirect.com/large-size/Lightweight-Crewneck-Cotton-Tee-Shirt-with-Pocket.aspx?PfId=209527&amp;DeptId=23942&amp;ProductTypeId=1&amp;ppos=1&amp;Splt=1&amp;StyleNo=1533" name="url" type="hidden">    <input value="265" name="website_id" type="hidden">        <input value="false" name="var[logged_in]" type="hidden">         <input value="0" name="var[items_in_cart]" type="hidden">         <input value="" name="var[category]" type="hidden">         <input value="false" name="var[foot_email_sub]" type="hidden">         <input value="false" name="var[show_cart_annotation]" type="hidden">         <input value="0" name="var[cart_value]" type="hidden">         <input value="false" name="var[show_reg_anno]" type="hidden">     <div class="bcx_el bg " id="bouncex_el_3" style="min-width:20px; min-height:20px; height:80px; width:984px;       font-family:Arial;   position:absolute;    z-index:0;   top:0;   left:0;  ">    <div name="3_name" style="        font-size:12px;    padding:0;             height:80px;       width:984px;            border-radius: 0;      background-color:transparent;      margin:0;       background-image:url(about:blank);    text-shadow: none;        box-shadow: none;    margin:0;           display:block;     ">          <img alt="" title="" onerror="errored=true;" src="85314_data/5vaMcF8T.png" border="0" height="80" width="984">     </div>       </div>   <div class="bcx_el text " id="bouncex_el_5" style="min-width:20px; min-height:20px; height:30px; width:114px;       font-family:Arial;   position:absolute;    z-index:2;   font-size:;   top:34px;   left:836px;  ">    <div name="5_name" style="        font-size:12px;    padding:0;             height:30px;       width:114px;            border-radius: 0;      background-color:transparent;      margin:0;            zoom:100%;      -moz-transform: scale(1);      -moz-transform-origin: top left;      background-image:url(about:blank);    text-shadow: none;        box-shadow: none;    margin:0;           display:block;       border:1px solid transparent;   "><span style="color: white; font-size: x-large;">KS12035</span></div>        </div>       </form>   </div>  </div>     			</div>
+		
+</body></html>
