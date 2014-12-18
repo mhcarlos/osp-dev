@@ -261,9 +261,9 @@
     font-size: 1.1em;
     margin-bottom: 1em
 }
-.m-addToBagConfirmation .m-pricingStory .e-price {
+/*.m-addToBagConfirmation .m-pricingStory .e-price {
     color: #c00
-}
+}*/
 .m-addToBagConfirmation-productTemplate {
     display: none
 }
@@ -290,8 +290,8 @@
 }
 .recommendations .recommendation {
     float: left;
-    width: 24%;
     text-align: center;
+    width: 175px;
 }
 .prod-img {
     width: 88px;
@@ -332,7 +332,14 @@ a.prod-text {
 #carousel1 .item  {
     margin-bottom: 20px;
 }
-
+#carousel2 {
+    width: 100%;
+    height: 200px;
+}
+#carousel2 .tem {
+    width: 150px;
+    padding-bottom: 30px;
+}
 .carousel-wrap {
     float: left;
     position: relative;
@@ -349,13 +356,22 @@ a.prod-text {
     color: #002a54;
     cursor: pointer;
 }
-.carousel-wrap .prev {
+.carousel-wrap .prev{
     top: 35%;
     left: 0;
 }
 .carousel-wrap .next {
     top: 35%;
     right: 0;
+    background-position: -8px 0;
+}
+.carousel-wrap .prev2 {
+    top: 35%;
+    left: 10px;
+}
+.carousel-wrap .next2 {
+    top: 35%;
+    right: 10px;
     background-position: -8px 0;
 }
 .p-cta,.p-cta--affirmative,.p-cta--affirmative:link,.p-cta--affirmative:active,.p-cta--affirmative:visited,.p-cta:link,.p-cta--affirmative:link,.p-cta:active,.p-cta--affirmative:active,.p-cta:visited,.p-cta--affirmative:visited {
