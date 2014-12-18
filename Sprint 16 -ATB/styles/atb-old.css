@@ -278,5 +278,103 @@
 }
 
 
-
 /* END: m-addtoBagConfirmation.css */
+
+
+/* BEGIN: New styles and overrides */
+
+.recommendations {
+    overflow: hidden;
+    width: 100%;
+    background-color: #fff
+}
+.recommendations .recommendation {
+    float: left;
+    width: 24%;
+    text-align: center;
+}
+.prod-img {
+    width: 88px;
+    clear: both;
+}
+.prod-text {
+    clear: both;
+    display: block;
+}
+a.prod-text {
+    color: #16487b;
+    text-decoration: none;
+}
+.original-price {
+    text-decoration: line-through;
+}
+.sale-price {
+    color: #fb1f00;
+}
+.overlay-header-ymal {
+    background-color: #002a54;
+    color: #fff;
+    text-transform: uppercase;
+    font: bold 1.3em/2.2em Arial,sans-serif;
+    width: 98%;
+    text-align: center;
+    margin: 0 auto;
+}
+.m-addToBagConfirmation .e-column-productInfo, .m-addToBagConfirmation .e-column-cartInfo {
+    padding: 20px 15px;
+    margin: 15px 0;
+}
+#carousel1 {
+    width: 100%;   
+    overflow: hidden;
+}
+#carousel1 .item  {
+    margin-bottom: 20px;
+}
+
+.carousel-wrap {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding: 0 30px;
+}
+.carousel-wrap .btn {
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 23px;
+    text-indent: -9999px;
+    background:url("../img/sprite-carousel.png") 0 0 no-repeat;
+    color: #002a54;
+    cursor: pointer;
+}
+.carousel-wrap .prev {
+    top: 35%;
+    left: 0;
+}
+.carousel-wrap .next {
+    top: 35%;
+    right: 0;
+    background-position: -8px 0;
+}
+.p-cta,.p-cta--affirmative,.p-cta--affirmative:link,.p-cta--affirmative:active,.p-cta--affirmative:visited,.p-cta:link,.p-cta--affirmative:link,.p-cta:active,.p-cta--affirmative:active,.p-cta:visited,.p-cta--affirmative:visited {
+    background-color: #d6dbe3;
+    color: #114579;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 1em;
+    margin-right: 0.8em;
+    margin-top: 1em;
+    padding: 0.7em 1em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.p-cta--affirmative,.p-cta--affirmative:link,.p-cta--affirmative:active,.p-cta--affirmative:visited {
+    background-color: #7ac300;
+    color: #fff;
+}
+
+/* END: New stiles and overrides */
