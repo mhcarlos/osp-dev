@@ -138,7 +138,7 @@ Customers love the versatility and fit of this tee.">
   <div class="m-closeButton"></div>
   <div class="e-column-productInfo">
     <h3 class="e-heading">
-      <span class="e-addedItemCount">1</span>  item(s) added to shopping bag:
+      <span class="e-addedItemCount"></span>  item(s) added to shopping bag:
     </h3>
     <div class="m-addToBagConfirmation-productTemplate">
       <img src="javascript:void(0);" class="e-productImage">
@@ -398,11 +398,21 @@ Customers love the versatility and fit of this tee.">
     var car2 = $("#carousel2");
 
     car1.owlCarousel({
-      items : 1      
+      items : 1, 
+      itemsDesktop : [1000,1], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,1], // betweem 900px and 601px
+      itemsTablet: [600,1], //2 items between 600 and 0
+      itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+      pagination : false            
     }); 
 
     car2.owlCarousel({
-      items : 4
+      items : 4, //10 items above 1000px browser width
+      itemsDesktop : [1000,1], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,1], // betweem 900px and 601px
+      itemsTablet: [600,1], //2 items between 600 and 0
+      itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+      pagination : false  
     })
 
     // Custom Navigation Events
