@@ -1,0 +1,380 @@
+/* BEGIN: p-positioning.css */
+
+.p-floatLeft {
+    float: left;
+}
+
+.p-floatRight {
+    float: right;
+}
+
+.p-centered {
+    text-align: center;
+}
+
+.p-show {
+    display: block !important;
+    visibility: visible !important;
+}
+
+.p-showInlineBlock {
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+.p-hide {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.p-horizontalList {
+    font-size: 0;
+}
+
+.p-horizontalList>* {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 100%;
+    margin: 0;
+}
+
+.p-clearfix {
+    overflow: hidden;
+    *zoom: 1;
+}
+
+/* END: p-positioning.css */
+
+
+/* ***************** */
+
+
+/* BEGIN: m-pricingStory.css */
+
+/* modules / pricingStory
+ *
+ * Formats different instances of product price and its adjustments.
+ *
+ */
+.m-pricingStory .e-price, .m-pricingStory .e-price--adjusted, .m-pricingStory .e-price--original {
+    color: #000;
+}
+
+.m-pricingStory .e-price--adjusted {
+    color: #cc0000;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.m-pricingStory .e-price--original {
+    color: #000;
+    text-decoration: line-through;
+}
+
+.m-pricingStory .e-price--savings {
+    color: #cc0000;
+}
+
+/* END: m-pricingStory.css */
+
+
+/* ***************** */
+
+
+/* BEGIN: m-closeButton.css */
+
+/* modules / closeButton
+ *
+ * Triggers disable of other modules, such as popups or tooltips
+ *
+ */
+.m-closeButton {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+    opacity: 0.2;
+    text-shadow: 0 1px 0 white;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 18px;
+    position: absolute;
+    right: 12px;
+    text-decoration: none;
+    top: 12px;
+}
+
+.m-closeButton:before {
+    content: "\00D7";
+}
+
+.m-closeButton:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    opacity: 0.4;
+}
+
+/* END: m-closeButton.css */
+
+
+/* ***************** */
+
+
+/* BEGIN: m-popupWindow.css */
+
+.m-popupWindow {
+    overflow: hidden;
+    *zoom: 1;
+    -moz-box-shadow: 0px 0px 5px #333;
+    -webkit-box-shadow: 0px 0px 5px #333;
+    box-shadow: 0px 0px 5px #333;
+    background-color: #fff;
+    display: none;
+    padding: 1%;
+    position: absolute;
+    width: 60%;
+    top: 200px;
+    z-index: 2147483647;
+}
+
+.m-popupWindow *,.m-popupWindow *:before,.m-popupWindow *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.m-popupWindow.lteIE9 {
+    border: 3px solid #aaa;
+}
+
+.m-popupWindow-bg {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    background: #fff;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2147483646;
+}
+
+/* END: m-popupWindow.css */
+
+
+/* ***************** */
+
+
+/* BEGIN: m-addtoBagConfirmation.css */
+
+.m-addToBagConfirmation {
+	width: 760px;
+	padding: 0 0 3.5em;
+	overflow: hidden
+}
+.m-addToBagConfirmation .e-column-productInfo, .m-addToBagConfirmation .e-column-cartInfo {
+	float: left;
+	list-style-type: none;
+	margin-bottom: -9999px;
+	padding: 5%;
+	padding-bottom: 9999px
+}
+.m-addToBagConfirmation .e-column-productInfo {
+	width: 57%
+}
+.m-addToBagConfirmation .e-column-cartInfo {
+	border-left: 1px solid #dedede;
+	font-weight: bold;
+	width: 43%
+}
+.m-addToBagConfirmation .e-heading {
+	background: transparent url("//secureimages.plussizetech.com/images/site_images/roamans/check.png") no-repeat scroll left center;
+	color: #007500;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 1em;
+	padding-left: 2em
+}
+.m-addToBagConfirmation .e-productName {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0
+}
+.m-addToBagConfirmation .e-productImage {
+	margin-right: 8%;
+	vertical-align: top;
+	width: 28%
+}
+.m-addToBagConfirmation .e-productData {
+	display: inline-block;
+	list-style-type: none;
+	vertical-align: top;
+	width: 62%
+}
+.m-addToBagConfirmation .e-productColor {
+	text-transform: capitalize
+}
+.m-addToBagConfirmation .e-productInfoLabel, .m-addToBagConfirmation .e-shippingStatusLabel {
+	font-weight: bold
+}
+.m-addToBagConfirmation .e-productInfoLabel {
+	display: inline-block;
+	width: 30%
+}
+.m-addToBagConfirmation .e-shippingStatusLabel {
+	font-size: 1.3em
+}
+.m-addToBagConfirmation .e-shippingStatus, .m-addToBagConfirmation .e-shippingStatus--backOrder, .m-addToBagConfirmation .e-shippingStatus--dropShip, .m-addToBagConfirmation .e-shippingStatus--fullBeauty, .m-addToBagConfirmation .e-shippingStatus--braClub, .m-addToBagConfirmation .e-shippingStatus--bonusItem, .m-addToBagConfirmation .e-shippingStatus--intlShipping, .m-addToBagConfirmation .e-shippingStatus--heavyItem {
+	margin-top: 1em
+}
+.m-addToBagConfirmation .e-shippingStatus--backOrder, .m-addToBagConfirmation .e-shippingStatus--dropShip, .m-addToBagConfirmation .e-shippingStatus--fullBeauty, .m-addToBagConfirmation .e-shippingStatus--braClub, .m-addToBagConfirmation .e-shippingStatus--bonusItem, .m-addToBagConfirmation .e-shippingStatus--intlShipping, .m-addToBagConfirmation .e-shippingStatus--heavyItem {
+	display: none
+}
+.m-addToBagConfirmation .e-shippingStatusLabel {
+	color: #007500;
+	font-weight: bold
+}
+.m-addToBagConfirmation .e-shippingStatus--backOrder .e-shippingStatusLabel {
+	color: #f90
+}
+.m-addToBagConfirmation .e-shippingStatusDate {
+	font-weight: bold
+}
+.m-addToBagConfirmation .e-cartItems {
+	border-bottom: 1px solid #ccc;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	padding-bottom: 1em
+}
+.m-addToBagConfirmation .e-cartSubtotalLabel {
+	display: inline-block;
+	width: 62%
+}
+.m-addToBagConfirmation .e-cmsContent {
+	font-weight: normal;
+	margin-top: 1em
+}
+.m-addToBagConfirmation .p-cta, .m-addToBagConfirmation .p-cta--affirmative {
+	width: 100%
+}
+.m-addToBagConfirmation .m-pricingStory {
+	font-size: 1.1em;
+	margin-bottom: 1em
+}
+.m-addToBagConfirmation .m-pricingStory .e-price {
+	color: #c00
+}
+.m-addToBagConfirmation-productTemplate {
+	display: none
+}
+.m-addToBagConfirmation-productTemplate.is-populated {
+	display: block;
+	vertical-align: top
+}
+.m-addToBagConfirmation-productTemplate.is-multiItem {
+	border-top: 1px solid #ccc;
+	margin-top: 1em;
+	padding-top: 1em
+}
+
+
+/* END: m-addtoBagConfirmation.css */
+
+
+/* BEGIN: New styles and overrides */
+
+.recommendations {
+    overflow: hidden;
+    width: 100%;
+    background-color: #fff
+}
+.recommendations .recommendation {
+    float: left;
+    width: 24%;
+    text-align: center;
+}
+.prod-img {
+    width: 88px;
+    clear: both;
+}
+.prod-text {
+    clear: both;
+    display: block;
+}
+a.prod-text {
+    color: #16487b;
+    text-decoration: none;
+}
+.original-price {
+    text-decoration: line-through;
+}
+.sale-price {
+    color: #fb1f00;
+}
+.overlay-header-ymal {
+    background-color: #002a54;
+    color: #fff;
+    text-transform: uppercase;
+    font: bold 1.3em/2.2em Arial,sans-serif;
+    width: 98%;
+    text-align: center;
+    margin: 0 auto;
+}
+.m-addToBagConfirmation .e-column-productInfo, .m-addToBagConfirmation .e-column-cartInfo {
+    padding: 20px 15px;
+    margin: 15px 0;
+}
+#carousel1 {
+    width: 100%;   
+    overflow: hidden;
+}
+#carousel1 .item  {
+    margin-bottom: 20px;
+}
+
+.carousel-wrap {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding: 0 30px;
+}
+.carousel-wrap .btn {
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 23px;
+    text-indent: -9999px;
+    background:url("../img/sprite-carousel.png") 0 0 no-repeat;
+    color: #002a54;
+    cursor: pointer;
+}
+.carousel-wrap .prev {
+    top: 35%;
+    left: 0;
+}
+.carousel-wrap .next {
+    top: 35%;
+    right: 0;
+    background-position: -8px 0;
+}
+.p-cta,.p-cta--affirmative,.p-cta--affirmative:link,.p-cta--affirmative:active,.p-cta--affirmative:visited,.p-cta:link,.p-cta--affirmative:link,.p-cta:active,.p-cta--affirmative:active,.p-cta:visited,.p-cta--affirmative:visited {
+    background-color: #d6dbe3;
+    color: #114579;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 1em;
+    margin-right: 0.8em;
+    margin-top: 1em;
+    padding: 0.7em 1em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.p-cta--affirmative,.p-cta--affirmative:link,.p-cta--affirmative:active,.p-cta--affirmative:visited {
+    background-color: #7ac300;
+    color: #fff;
+}
+
+/* END: New stiles and overrides */

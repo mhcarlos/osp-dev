@@ -1,0 +1,20 @@
+/* modules / pricingStory
+ *
+ * Formats different instances of product price and its adjustments.
+ *
+ */
+.m-pricingStory .e-price, .m-pricingStory .e-price--adjusted, .m-pricingStory .e-price--original {
+  color: #000;
+}
+.m-pricingStory .e-price--adjusted {
+  color: #cc0000;
+  margin-top:5px;
+  margin-bottom:3px;
+}
+.m-pricingStory .e-price--original {
+  color: #000;
+  text-decoration: line-through;
+}
+.m-pricingStory .e-price--savings {
+  color: #cc0000;
+}

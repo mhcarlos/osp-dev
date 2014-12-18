@@ -1,0 +1,3 @@
+window.pageViewer.check(1,1);
+window.pageViewer.update('0.07939910946414153', 'http://images.boldchat.com/images/clear.gif', null);
+window.pageViewer.update('0.5666820091633543', 'http://images.plussizetech.com/images/site_images/ksd/ksd_chatimage.jpg', null);
