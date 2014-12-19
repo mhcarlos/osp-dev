@@ -327,7 +327,7 @@ Customers love the versatility and fit of this tee.">
     </li>
   </ul>
 
-  <div class="recommendations">
+  <div class="atb-recommendations">
     <h3 class="overlay-header-ymal">You may also like</h3>
 
     <div class="carousel-wrap carousel2">
@@ -398,24 +398,25 @@ Customers love the versatility and fit of this tee.">
     var car2 = $("#carousel2");
 
     car1.owlCarousel({
-      items : 1, 
-      itemsDesktop : [1000,1], //5 items between 1000px and 901px
-      itemsDesktopSmall : [900,1], // betweem 900px and 601px
-      itemsTablet: [600,1], //2 items between 600 and 0
-      itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
-      pagination : false            
+      singleItem : true,  
+      afterAction: function(){
+        if ((this.owl.owlItems.length) > 1) {
+          $(".cn1").fadeIn();
+        }
+      }
     }); 
 
     car2.owlCarousel({
-      items : 4, //10 items above 1000px browser width
-      itemsDesktop : [1000,1], //5 items between 1000px and 901px
-      itemsDesktopSmall : [900,1], // betweem 900px and 601px
-      itemsTablet: [600,1], //2 items between 600 and 0
-      itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
-      pagination : false  
+      items : 4,   
+      afterAction: function(){
+        if ((this.owl.owlItems.length) > 4) {
+          $(".cn2").fadeIn();
+        }
+      }
+
     })
 
-    // Custom Navigation Events
+    // Navigation Events
 
     $(".next").click(function(){
       car1.trigger('owl.next');

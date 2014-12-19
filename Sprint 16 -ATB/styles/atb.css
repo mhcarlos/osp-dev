@@ -283,12 +283,12 @@
 
 /* BEGIN: New styles and overrides */
 
-.recommendations {
+.atb-recommendations {
     overflow: hidden;
     width: 100%;
     background-color: #fff
 }
-.recommendations .recommendation {
+.atb-recommendations .recommendation {
     float: left;
     text-align: center;
     width: 175px;
@@ -319,6 +319,7 @@ a.prod-text {
     width: 98%;
     text-align: center;
     margin: 0 auto;
+    clear: both;
 }
 .m-addToBagConfirmation .e-column-productInfo, .m-addToBagConfirmation .e-column-cartInfo {
     padding: 20px 15px;
@@ -394,4 +395,5 @@ a.prod-text {
     color: #fff;
 }
 
+.atb-ajax {display: block!important;}
 /* END: New styles and overrides */
