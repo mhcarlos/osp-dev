@@ -198,7 +198,7 @@
 .m-addToBagConfirmation .e-productName {
     font-size: 1.2em;
     font-weight: bold;
-    margin: 0
+    margin: 15px 0 0;
 }
 .m-addToBagConfirmation .e-productImage {
     margin-right: 8%;
@@ -283,12 +283,12 @@
 
 /* BEGIN: New styles and overrides */
 
-.recommendations {
+.atb-recommendations {
     overflow: hidden;
     width: 100%;
     background-color: #fff
 }
-.recommendations .recommendation {
+.atb-recommendations .recommendation {
     float: left;
     text-align: center;
     width: 175px;
@@ -322,7 +322,7 @@ a.prod-text {
 }
 .m-addToBagConfirmation .e-column-productInfo, .m-addToBagConfirmation .e-column-cartInfo {
     padding: 20px 15px;
-    margin: 15px 0;
+    margin: 15px 0 60px;
 }
 #carousel1 {
     width: 100%; 
@@ -394,4 +394,59 @@ a.prod-text {
     color: #fff;
 }
 
+/* Vertical Recommendations Overrides */
+.e-column-cartInfo li {
+  clear: both;
+}
+.m-addToBagConfirmation .e-column-productInfo, .m-addToBagConfirmation .e-column-cartInfo {
+  float: none;
+  width: 60%;
+}
+.m-addToBagConfirmation .e-cartItems, .m-addToBagConfirmation .m-pricingStory {
+  float: right;
+  margin-top: 1em;
+  width: 48%;
+  font-size: 1.1em;
+}
+.m-addToBagConfirmation .m-pricingStory {
+  margin-top: 0;
+}
+.p-cta, .p-cta--affirmative, .p-cta--affirmative:link, .p-cta--affirmative:active, .p-cta--affirmative:visited, .p-cta:link, .p-cta--affirmative:link, .p-cta:active, .p-cta--affirmative:active, .p-cta:visited, .p-cta--affirmative:visited {
+  font-size: 1em;
+  line-height: 0.8em;
+  width: 48%;
+}
+.p-cta--affirmative, .p-cta--affirmative:link, .p-cta--affirmative:active, .p-cta--affirmative:visited {
+  float: right;
+  margin-right: 0;
+}
+.atb-recommendations {
+  width: 35%;
+  position: absolute;
+  margin-bottom: 200px;
+  top: 25px;
+  right: 10px;
+  border-left: 1px solid #ccc;
+}
+.atb-recommendations .recommendation {
+  width: auto;
+}
+.atb-recommendations .prod-img {
+  float: left;
+  margin: 5px 15px;
+}
+.atb-recommendations .prod-text {
+  clear:none;
+  text-align: left;
+}
+.atb-recommendations .prod-text.product-name {
+  margin-top: 20px;
+}
+.overlay-header-ymal {
+  background: none;
+  color: #002a54;
+  font: bold 1.2em/1.8em Arial,sans-serif;
+}
+
+.atb-ajax {display: block!important;}
 /* END: New styles and overrides */

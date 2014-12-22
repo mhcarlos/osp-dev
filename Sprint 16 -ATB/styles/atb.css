@@ -198,7 +198,7 @@
 .m-addToBagConfirmation .e-productName {
     font-size: 1.2em;
     font-weight: bold;
-    margin: 0
+    margin: 15px 0 0;
 }
 .m-addToBagConfirmation .e-productImage {
     margin-right: 8%;
@@ -395,5 +395,62 @@ a.prod-text {
     color: #fff;
 }
 
+/* Vertical Recommendations Overrides */
+.vertical .e-column-cartInfo li {
+  clear: both;
+}
+.vertical .m-addToBagConfirmation .e-column-productInfo, .vertical .m-addToBagConfirmation .e-column-cartInfo {
+  float: none;
+  width: 60%;
+}
+.vertical .m-addToBagConfirmation .e-cartItems, .vertical .m-addToBagConfirmation .m-pricingStory {
+  float: right;
+  margin-top: 1em;
+  width: 48%;
+  font-size: 1.1em;
+}
+.vertical .m-addToBagConfirmation .m-pricingStory {
+  margin-top: 0;
+}
+.vertical .p-cta, .p-cta--affirmative, .vertical .p-cta--affirmative:link, .vertical .p-cta--affirmative:active, .vertical .p-cta--affirmative:visited, .vertical .p-cta:link, .vertical .p-cta--affirmative:link, .vertical .p-cta:active, .vertical .p-cta--affirmative:active, .vertical .p-cta:visited, .vertical .p-cta--affirmative:visited {
+  font-size: 1em;
+  line-height: 0.8em;
+  width: 48%;
+}
+.vertical .p-cta--affirmative, .vertical .p-cta--affirmative:link, .vertical .p-cta--affirmative:active, .vertical .p-cta--affirmative:visited {
+  float: right;
+  margin-right: 0;
+}
+.vertical .atb-recommendations {
+  width: 35%;
+  position: absolute;
+  margin-bottom: 200px;
+  top: 25px;
+  right: 10px;
+  border-left: 1px solid #ccc;
+}
+.vertical .atb-recommendations .recommendation {
+  width: auto;
+}
+.vertical .atb-recommendations .prod-img {
+  float: left;
+  margin: 5px 15px;
+}
+.vertical .atb-recommendations .prod-text {
+  clear:none;
+  text-align: left;
+}
+.vertical .atb-recommendations .prod-text.product-name {
+  margin-top: 20px;
+}
+.vertical .overlay-header-ymal {
+  background: none;
+  color: #002a54;
+  font: bold 1.2em/1.8em Arial,sans-serif;
+  clear: none;
+}
+
+
 .atb-ajax {display: block!important;}
+.atb-old-pdp {display: none !important;}
 /* END: New styles and overrides */
