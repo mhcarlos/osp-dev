@@ -454,18 +454,14 @@ margin: 15px 0 50px;
 .atb-vertical .customNavigation.cn2 {
     display: none!important;
 }
-
-.atb-vertical .atb-recommendations .owl-carousel .owl-wrapper-outer {
-    height: auto;
-}
 .atb-vertical .atb-recommendations .owl-carousel .owl-item {
     float: none;
 }
 .atb-vertical .atb-recommendations .owl-item {
     width: 220px!important;
 }
-.atb-vertical .atb-recommendations .owl-carousel .owl-wrapper-outer {
-    overflow: visible;
+.atb-vertical .atb-recommendations #carousel2 {
+    height: auto;
 }
 
 .atb-ajax {display: block!important;}
